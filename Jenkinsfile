@@ -32,7 +32,7 @@ pipeline {
 
                 sh "sed -i 's/kfimg:.*\$/kfimg:${env.BUILD_NUMBER}/g' kf-deployment/deployment.yaml"
                 sh "git add kf-deployment/deployment.yaml"
-                sh "git commit -m '[UPDATE] store ${env.BUILD_NUMBER} image versioning'"
+                sh "git commit -m '[UPDATE] kfimg ${env.BUILD_NUMBER} image versioning'"
                 withCredentials([gitUsernamePassword(credentialsId: 'XOXOT')]) {
                     sh "git push -u origin main"
                 }
