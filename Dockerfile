@@ -1,5 +1,5 @@
 FROM openjdk:18-jdk-alpine AS gogle
-ADD KF-Project-01.tar .
+ADD KF-Project-WAS.tar .
 WORKDIR KF-Project-WAS
 RUN chmod +x mvnw
 RUN ./mvnw clean install -DskipTests=true
