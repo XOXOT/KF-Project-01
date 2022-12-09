@@ -35,10 +35,10 @@ public class OrderDetail implements Serializable {
     private int quanity;
  
     @Column(name = "Price", nullable = false)
-    private double price;
+    private int price;
  
     @Column(name = "Amount", nullable = false)
-    private double amount;
+    private int amount;
  
     public String getId() {
         return id;
@@ -72,19 +72,19 @@ public class OrderDetail implements Serializable {
         this.quanity = quanity;
     }
  
-    public double getPrice() {
+    public int getPrice() {
         return price;
     }
  
-    public void setPrice(double price) {
+    public void setPrice(int price) {
         this.price = price;
     }
  
-    public double getAmount() {
+    public int getAmount() {
         return amount;
     }
  
-    public void setAmount(double amount) {
+    public void setAmount(int amount) {
         this.amount = amount;
     }
  
