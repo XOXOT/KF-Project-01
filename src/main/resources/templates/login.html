@@ -56,9 +56,9 @@
         <div class="row">
             <div class="col-lg-6 col-sm-8 col-xs-12">
                 <section id="spring_col1">
-                <h1>LOG IN</h1>
+                <h1>로그인</h1>
                     
-                <a href="">Forgot Your Password?</a>
+                <a href="">비밀번호 찾기</a>
                 
                 <!-- /login?error=true -->
          <th:block th:if="${#session != null && #session.getAttribute('SPRING_SECURITY_LAST_EXCEPTION') != null}">
@@ -71,17 +71,17 @@
 
                 <form method="POST" th:action="@{/j_spring_security_check}">
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Username</label>
+                    <label for="exampleInputEmail1">아이디</label>
                     <input type="text" name="userName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
+                    <label for="exampleInputPassword1">비밀번호</label>
                     <input type="password" name="password" class="form-control" id="exampleInputPassword1">
                   </div>
                   <div class="form-group form-check">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    <label class="form-check-label" for="exampleCheck1">로그인 상태 유지</label>
                   </div>
                   <button type="submit" class="spring-btn-black">LOG IN <span class="fa fa-arrow-right" style="margin-left: 9px;"></span></button>
 		  <button type="submit" class="spring-btn-black">SIGN UP <span class="fa fa-arrow-right" style="margin-left: 9px;"></span></button>
@@ -92,45 +92,8 @@
 
                 <br><br>
 
-                By clicking 'Log In' you agree to our website <a href="">Creators Club Terms & Conditions </a>,  <a href="">Spring Privacy Notice</a> and  <a href="">Terms & Conditions</a>.
-
                <!--  ----------- form end -------------- -->
 
-
-               </section>
-                <div style="text-align:left">
-          <h3>User/Password:</h3>
-          <ul>        
-             <li>employee1/123</li>
-             <li>manager1/123</li>   
-          </ul>
-            </div>
-            </div>
-            
-            <div class="col-lg-6 col-sm-4 col-xs-12">
-                
-                <h1>JOIN THE CLUB. GET REWARDED.</h1>
-                    Join the adidas Creators Club membership program:
-                  <ul >
-                      <li ><i class="fas fa-check"></i> Get immediate access to all Challenger level rewards</li>
-                      <li><i class="fas fa-check"></i> Earn access to shop limited edition products</li>
-                      <li ><i class="fas fa-check"></i> Level up for exclusive access to sport, yoga and music events</li>
-                      <li ><i class="fas fa-check"></i> Receive our best special offers and promotions</li>
-                     
-                    </ul>  
-
-                    Join now and start earning points to access new levels and rewards. It's time to unlock the best of adidas.
-                    <br><br>
-                <a href=""  class="spring-btn-black" />JOIN THE CLUB <span class="fa fa-arrow-right" style="margin-left: 9px;"></span></a>
-
-                <br><br>
-
-                <img src="https://www.adidas.com/glass/react/ce0f36d/assets/img/CC2.0_my_account_register.jpg">
-            
-                
-            </div>
-        </div>
-    </div>
     
 
         <!-- ------------------------------Login page end---------------------------------- -->
