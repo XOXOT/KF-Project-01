@@ -34,12 +34,12 @@
      <img th:src="@{|/productImage?code=${prodInfo.code}|}" alt="..." 
      style="width:280px; height:320px; margin-bottom:5px; margin-right:2px;">
      <div class="box">
-      <h6 class="h6_offer">Originals</h6>
+      <h6 class="h6_offer">지역 축제</h6>
       <p style="font-size:13px;"><span th:utext="${prodInfo.name}"></span><br>
         $<span th:utext="${prodInfo.price}"></span>
       </p>
-      <h6 class="h6_offer">2 colors</h6>
-      <a th:href="@{|/buyProduct?code=${prodInfo.code}|}" class="btn btn-link" >Buy Now</a>
+      <h6 class="h6_offer">예매가능</h6>
+      <a th:href="@{|/buyProduct?code=${prodInfo.code}|}" class="btn btn-link" >예매하기</a>
             </div>
              </div>
              
@@ -47,7 +47,7 @@
             <th:block sec:authorize="hasAuthority('ROLE_MANAGER')">
                
                  <a style="color:red;"
-                    th:href="@{|/admin/product?code=${prodInfo.code}|}">Edit Product</a>
+                    th:href="@{|/admin/product?code=${prodInfo.code}|}">상품 수정</a>
                
             </th:block>
             </div>
