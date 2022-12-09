@@ -7,7 +7,7 @@ import com.example.demo.entity.Product;
 public class ProductForm {
     private String code;
     private String name;
-    private double price;
+    private int price;
  
     private boolean newProduct = false;
  
@@ -40,11 +40,11 @@ public class ProductForm {
         this.name = name;
     }
  
-    public double getPrice() {
+    public int getPrice() {
         return price;
     }
  
-    public void setPrice(double price) {
+    public void setPrice(int price) {
         this.price = price;
     }
  
