@@ -67,8 +67,8 @@
             <td th:utext="${orderDetailInfo.productCode}"></td>
             <td th:utext="${orderDetailInfo.productName}"></td>
             <td th:utext="${orderDetailInfo.quanity}"></td>
-            <td th:utext="${#numbers.formatDecimal(orderDetailInfo.price)}"></td>
-            <td th:utext="${#numbers.formatDecimal(orderDetailInfo.amount)}"></td>
+            <td th:utext="${orderDetailInfo.price}"></td>
+            <td th:utext="${orderDetailInfo.amount}"></td>
          </tr>
       </table>
       		 </div>
