@@ -41,7 +41,7 @@
          <h3>주문 요약:</h3>
          <ul>
             <li>총 가격:
-               <span class="total" th:utext="${#numbers.formatDecimal(orderInfo.amount)}">         
+               <span class="total" th:utext="${orderInfo.amount}">         
                </span>
             </li>
          </ul>
