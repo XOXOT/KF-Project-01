@@ -5,7 +5,7 @@ import com.example.demo.entity.Product;
 public class ProductInfo {
     private String code;
     private String name;
-    private double price;
+    private String price;
  
     public ProductInfo() {
     }
