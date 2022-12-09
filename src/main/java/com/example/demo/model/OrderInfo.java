@@ -8,7 +8,7 @@ public class OrderInfo {
     private String id;
     private Date orderDate;
     private int orderNum;
-    private double amount;
+    private int amount;
  
     private String customerName;
     private String customerAddress;
@@ -60,7 +60,7 @@ public class OrderInfo {
         this.orderNum = orderNum;
     }
  
-    public double getAmount() {
+    public int getAmount() {
         return amount;
     }
  
