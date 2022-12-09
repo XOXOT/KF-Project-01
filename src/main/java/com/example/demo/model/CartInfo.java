@@ -100,8 +100,8 @@ public class CartInfo {
         return quantity;
     }
  
-    public double getAmountTotal() {
-        double total = 0;
+    public int getAmountTotal() {
+        int total = 0;
         for (CartLineInfo line : this.cartLines) {
             total += line.getAmount();
         }
