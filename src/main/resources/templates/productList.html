@@ -36,7 +36,7 @@
      <div class="box">
       <h6 class="h6_offer">지역 축제</h6>
       <p style="font-size:13px;"><span th:utext="${prodInfo.name}"></span><br>
-        $<span th:utext="${prodInfo.price}"></span>
+        <span th:utext="${prodInfo.price}">원</span>
       </p>
       <h6 class="h6_offer">예매가능</h6>
       <a th:href="@{|/buyProduct?code=${prodInfo.code}|}" class="btn btn-link" >예매하기</a>
