@@ -25,7 +25,7 @@ public class Product implements Serializable {
     private String name;
  
     @Column(name = "Price", nullable = false)
-    private double price;
+    private int price;
  
     @Lob
     @Column(name = "Image", length = Integer.MAX_VALUE, nullable = true)
@@ -54,11 +54,11 @@ public class Product implements Serializable {
         this.name = name;
     }
  
-    public double getPrice() {
+    public int getPrice() {
         return price;
     }
  
-    public void setPrice(double price) {
+    public void setPrice(int price) {
         this.price = price;
     }
  
