@@ -24,7 +24,7 @@
       <th:block sec:authorize="hasAnyRole('ROLE_MANAGER','ROLE_EMPLOYEE')">
       <li class="nav-item">
       	<a th:href="@{/admin/orderList}" class="nav-link">
-      Order List
+      발주 내역 
       </a>
       </li>
       
@@ -32,7 +32,7 @@
    <th:block sec:authorize="hasRole('ROLE_MANAGER')">
    <li class="nav-item">
       <a th:href="@{/admin/product}" class="nav-link">
-      Create Product
+      상품 생성
       </a>
       </li>
    	</th:block>
