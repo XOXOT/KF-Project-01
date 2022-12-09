@@ -7,8 +7,8 @@ public class OrderDetailInfo {
     private String productName;
  
     private int quanity;
-    private double price;
-    private double amount;
+    private int price;
+    private int amount;
  
     public OrderDetailInfo() {
  
@@ -57,7 +57,7 @@ public class OrderDetailInfo {
         this.quanity = quanity;
     }
  
-    public double getPrice() {
+    public int getPrice() {
         return price;
     }
  
@@ -65,7 +65,7 @@ public class OrderDetailInfo {
         this.price = price;
     }
  
-    public double getAmount() {
+    public int getAmount() {
         return amount;
     }
  
